@@ -1,0 +1,24 @@
+- name: 경제
+  code: economy
+  link: /economy/index.html
+  subMenu :
+    - name : 경제
+      link : /
+    - name : 주식
+      link : ./
+- name: 프로그램
+  code: program
+  link: /program/index.html
+  subMenu :
+    - name : docker
+      link : /program/docker/info.html
+    - name : Kubernetes
+      link : /program/Kubernetes/info.html
+    - name : Jerkins
+      link : /program/Jerkins/info.html
+    - name : Git
+      link : /program/Git/info.html
+    - name : npm
+      link : /program/npm/info.html
+    - name : ruby
+      link : /program/ruby/info.html
