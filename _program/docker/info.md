@@ -10,7 +10,7 @@ isMenu: true
 
 [Docker_url]: https://www.docker.com/
 
-[docker hub][docker_hub_url] yhmoon76/!ansdydgh12
+[docker hub][docker_hub_url] 
 
 [docker_hub_url]: https://hub.docker.com/
 
