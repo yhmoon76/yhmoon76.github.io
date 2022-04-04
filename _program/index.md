@@ -3,7 +3,7 @@ title: Git
 author: WooYou
 date: 2022-03-30
 category: git
-layout: home
+layout: default
 isMenu: false
 ---
 디렉토리

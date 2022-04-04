@@ -3,7 +3,7 @@ title: Docker
 author: WooYou
 date: 2022-03-28
 category: docker
-layout: post
+layout: default
 isMenu: true
 ---
 # [Docker][Docker_url]
@@ -20,7 +20,7 @@ isMenu: true
 
 
 
-[Moby Project][Moby_Project_url]
+[Moby Project][Moby_Project_url]  
 
 [Moby_Project_url]: https://mobyproject.org/
 
@@ -92,7 +92,7 @@ isMenu: true
 
 * 이미지 목록 표시
 
-  <pre>
+  ```shell
   == docker image ls 명령 == 
   $ docker image ls [옵션] [리포지토리명] 
 
@@ -129,7 +129,7 @@ isMenu: true
 
   $ docker image inspect --format="{{ .Config.AttachStdout}}" nginx
   false
-  </pre>  
+  ```  
 
 * 이미지 태그 설정
   <pre>

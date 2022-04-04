@@ -3,7 +3,7 @@ title: Git
 author: WooYou
 date: 2022-03-29
 category: git
-layout: post
+layout: default
 isMenu: true
 ---
 ## Git

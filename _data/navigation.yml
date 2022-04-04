@@ -22,3 +22,6 @@
       link : /program/npm/info.html
     - name : ruby
       link : /program/ruby/info.html
+      subMenu :
+        - name : jekyll
+          link : /program/ruby/jekyll/jekyll.html
