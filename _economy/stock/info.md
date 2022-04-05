@@ -1,8 +1,8 @@
 ---
-title: Test
+title: stock
 author: WooYou
 date: 2019-04-28
-category: economy
+category: stock
 layout: default
-isMenu: true
 ---
+stock

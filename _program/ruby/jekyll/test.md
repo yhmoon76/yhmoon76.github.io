@@ -4,7 +4,6 @@ author: WooYou
 date: 2022-03-31
 category: [rudy, Jekyll]
 layout: default
-isMenu: true
 ---
 
 {{page.previous.title}}

@@ -4,16 +4,16 @@ author: WooYou
 date: 2022-03-30
 category: git
 layout: default
-isMenu: false
 ---
 디렉토리
 ------
-* [docker](./docker/info.html)
-* [Kubernetes](./)
-* [Jerkins](./)
-* [Git](./git/info.html)
-* [npm](./)
-* [ruby](./ruby/info.html)
+{% for depth1 in site.data.navigation %}
+{% if depth1.code == 'program'%}
+{% for depth2 in depth1.subMenu %}
+* [{{depth2.name}}]({{depth2.link}})
+{% endfor %}
+{% endif %} 
+{% endfor %}  
 
 
 블러그

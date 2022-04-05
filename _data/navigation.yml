@@ -3,9 +3,9 @@
   link: /economy/index.html
   subMenu :
     - name : 경제
-      link : /
+      link : /economy/economy/info.html
     - name : 주식
-      link : ./
+      link : /economy/stock/info.html
 - name: 프로그램
   code: program
   link: /program/index.html
@@ -13,15 +13,15 @@
     - name : docker
       link : /program/docker/info.html
     - name : Kubernetes
-      link : /program/Kubernetes/info.html
+      link : /program/kubernetes/info.html
     - name : Jerkins
-      link : /program/Jerkins/info.html
+      link : /program/jerkins/info.html
     - name : Git
-      link : /program/Git/info.html
+      link : /program/git/info.html
     - name : npm
       link : /program/npm/info.html
     - name : ruby
       link : /program/ruby/info.html
       subMenu :
         - name : jekyll
-          link : /program/ruby/jekyll/jekyll.html
+          link : /program/ruby/jekyll/info.html

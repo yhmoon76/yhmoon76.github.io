@@ -1,9 +1,8 @@
 ---
-title: About
+title: economy
 author: Tao He
 date: 2022-02-03
-category: Jekyll
+category: economy
 layout: default
-isMenu: true
 ---
 economy

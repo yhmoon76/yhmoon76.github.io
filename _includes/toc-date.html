@@ -44,39 +44,51 @@
                 {% endif %}
             {% endfor %}
 
-            {% for item in site.data.navigation %}
-                {% if page.url == item.link %}
-                    <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{item.link}}">
+            {% for depth1 in site.data.navigation %}
+
+                {% if page.url == depth1.link %}
+                    <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{depth1.link}}">
                 {% else %}
-                    <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{item.link}}">
+                    <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{depth1.link}}">
                 {% endif %}
-                <a href="{{site.baseurl}}{{item.link}}">
-                    {{item.name}}
+                <a href="{{site.baseurl}}{{depth1.link}}">
+                    {{depth1.name}}
                 </a>
-
-                {% for collection in site.collections %}
-                    {% if collection.label == item.code %}
-
-                    {% assign reversed_posts = site[collection.label] | reverse %}
+                {% if depth1.subMenu %}
                     <ul>
-                        {% for post in reversed_posts %}
-                            {% if post.isMenu == true %}
+                    {% for depth2 in depth1.subMenu %}
 
-                                {% if page.url == post.url %}
-                                    <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
-                                {% else %}
-                                    <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
-                                {% endif %}
-                                        <a href="{{site.baseurl}}{{post.url}}">
-                                            {{ post.title | escape }}
-                                        </a>
-                                    </li>
+                        {% if page.url == depth2.link %}
+                            <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{depth2.link}}">
+                        {% else %}
+                            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{depth2.link}}">
+                        {% endif %}
+                        <a href="{{site.baseurl}}{{depth2.link}}">
+                            {{depth2.name}}
+                        </a>
+                            {% if depth2.subMenu %}
+                            <ul>
+                                {% for depth3 in depth2.subMenu %}
+
+                                {% if page.url == depth3.link %}
+                                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{depth3.link}}">
+                                    {% else %}
+                                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{depth3.link}}">
+                                    {% endif %}
+                                    <a href="{{site.baseurl}}{{depth3.link}}">
+                                        {{depth3.name}}
+                                    </a>
+                                </li>
+
+                                {% endfor %}
+                            </ul>
                             {% endif %}
-                        {% endfor %}
+
+                        </li>
+                    {% endfor %}
                     </ul>
-                    {% endif %}
-                {% endfor %}
-                </li>
+                {% endif %}
+            </li>
             {% endfor %}
             <li class="divider"></li>
 

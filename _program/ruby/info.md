@@ -4,7 +4,6 @@ author: WooYou
 date: 2022-03-30
 category: rudy
 layout: default
-isMenu: true
 ---
 
 ## [Ruby](https://rubyinstaller.org/)

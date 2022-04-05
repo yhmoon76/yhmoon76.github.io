@@ -4,7 +4,6 @@ author: WooYou
 date: 2022-03-29
 category: git
 layout: default
-isMenu: true
 ---
 ## Git
 
