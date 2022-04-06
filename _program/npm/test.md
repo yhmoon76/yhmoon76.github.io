@@ -1,9 +1,9 @@
 ---
-title: test
+title: test3
 author: WooYou
-date: 2022-04-04
-category: posts
-layout: post
+date: 2022-03-31
+category: npm
+layout: default
 isPublishing: true
 ---
 
@@ -14,3 +14,5 @@ test
 test2
 -------------
 test2
+
+
