@@ -2,7 +2,7 @@
 title: npm
 author: WooYou
 date: 2022-03-31
-category: [npm]
+category: info
 layout: default
 ---
 npm

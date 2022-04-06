@@ -2,7 +2,7 @@
 title: Git
 author: WooYou
 date: 2022-03-29
-category: git
+category: info
 layout: default
 ---
 ## Git

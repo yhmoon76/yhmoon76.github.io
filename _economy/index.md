@@ -2,7 +2,7 @@
 title: economy
 author: Tao He
 date: 2022-02-03
-category: economy
+category: info
 layout: default
 ---
 economy

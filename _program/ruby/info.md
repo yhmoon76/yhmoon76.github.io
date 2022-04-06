@@ -2,7 +2,7 @@
 title: Rudy
 author: WooYou
 date: 2022-03-30
-category: rudy
+category: info
 layout: default
 ---
 

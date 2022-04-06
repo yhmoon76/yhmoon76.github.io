@@ -1,8 +1,8 @@
 ---
-title: Git
+title: program
 author: WooYou
 date: 2022-03-30
-category: git
+category: info
 layout: default
 ---
 디렉토리

@@ -2,7 +2,7 @@
 title: Docker
 author: WooYou
 date: 2022-03-28
-category: docker
+category: info
 layout: default
 ---
 # [Docker][Docker_url]

@@ -80,6 +80,22 @@
                                     </a>
                                 </li>
 
+                                {% for post in site['program'] %}
+                                    {% if post.category == depth3.name %}
+
+                                        {% if page.url == post.url %}
+                                        <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                                            {% else %}
+                                        <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                                            {% endif %}
+                                            <a href="{{site.baseurl}}{{post.url}}">
+                                                {{post.title}}
+                                            </a>
+                                        </li>
+                                    {% endif %}
+
+                                {% endfor %}
+
                                 {% endfor %}
                             </ul>
                             {% endif %}

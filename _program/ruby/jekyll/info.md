@@ -2,7 +2,7 @@
 title: Jekyll
 author: WooYou
 date: 2022-03-31
-category: [rudy, Jekyll]
+category: info
 layout: default
 ---
 
