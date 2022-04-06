@@ -1,27 +1,38 @@
 - name: 경제
   code: economy
   link: /economy/index.html
+  isPublishing : false
   subMenu :
     - name : 경제
       link : /economy/economy/info.html
+      isPublishing : false
     - name : 주식
       link : /economy/stock/info.html
+      isPublishing : false
 - name: 프로그램
   code: program
   link: /program/index.html
+  isPublishing : true
   subMenu :
     - name : docker
       link : /program/docker/info.html
+      isPublishing : true
     - name : Kubernetes
       link : /program/kubernetes/info.html
+      isPublishing : false
     - name : Jerkins
       link : /program/jerkins/info.html
+      isPublishing : false
     - name : Git
       link : /program/git/info.html
+      isPublishing : false
     - name : npm
       link : /program/npm/info.html
+      isPublishing : false
     - name : ruby
       link : /program/ruby/info.html
+      isPublishing : true
       subMenu :
         - name : jekyll
           link : /program/ruby/jekyll/info.html
+          isPublishing : true

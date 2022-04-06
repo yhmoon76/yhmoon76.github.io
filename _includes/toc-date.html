@@ -23,6 +23,7 @@
                     {% assign posts = site[collection.label]  %}
 
                         {% for post in posts %}
+                        {% if post.isPublishing %}
                             {% if page.url == post.url %}
                                 <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
                             {% else %}
@@ -37,6 +38,7 @@
                                 {% endif %}
                             {% endif %}
                         </li>
+                        {% endif %}
                         {% endfor %}
 
                     <li class="divider">{{collection.label}}</li>
@@ -45,6 +47,7 @@
             {% endfor %}
 
             {% for depth1 in site.data.navigation %}
+            {% if depth1.isPublishing %}
 
                 {% if page.url == depth1.link %}
                     <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{depth1.link}}">
@@ -57,6 +60,7 @@
                 {% if depth1.subMenu %}
                     <ul>
                     {% for depth2 in depth1.subMenu %}
+                    {% if depth2.isPublishing %}
 
                         {% if page.url == depth2.link %}
                             <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{depth2.link}}">
@@ -69,6 +73,7 @@
                             {% if depth2.subMenu %}
                             <ul>
                                 {% for depth3 in depth2.subMenu %}
+                                {% if depth3.isPublishing %}
 
                                 {% if page.url == depth3.link %}
                                 <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{depth3.link}}">
@@ -78,10 +83,9 @@
                                     <a href="{{site.baseurl}}{{depth3.link}}">
                                         {{depth3.name}}
                                     </a>
-                                </li>
-
+                                    <ul>
                                 {% for post in site['program'] %}
-                                    {% if post.category == depth3.name %}
+                                    {% if post.category == depth3.name and post.isPublishing %}
 
                                         {% if page.url == post.url %}
                                         <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
@@ -95,16 +99,67 @@
                                     {% endif %}
 
                                 {% endfor %}
+                                    </ul>
+                                </li>
 
+                                {% endif %}
+                                {% endfor %}
+
+
+                                {% for post in site['program'] %}
+                                {% if post.category == depth2.name and post.isPublishing %}
+
+                                {% if page.url == post.url %}
+                                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                                    {% else %}
+                                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                                    {% endif %}
+                                    <a href="{{site.baseurl}}{{post.url}}">
+                                        {{post.title}}
+                                    </a>
+
+
+                                    {% if site.toc.enabled %}
+                                        {% if page.url == post.url %}
+                                            {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                                        {% endif %}
+                                    {% endif %}
+                                </li>
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
+                            {% else %}
+                            <ul>
+                                {% for post in site['program'] %}
+                                {% if post.category == depth2.name and post.isPublishing %}
+
+                                {% if page.url == post.url %}
+                                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                                    {% else %}
+                                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                                    {% endif %}
+                                    <a href="{{site.baseurl}}{{post.url}}">
+                                        {{post.title}}
+                                    </a>
+
+                                    {% if site.toc.enabled %}
+                                        {% if page.url == post.url %}
+                                            {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                                        {% endif %}
+                                    {% endif %}
+                                </li>
+                                {% endif %}
                                 {% endfor %}
                             </ul>
                             {% endif %}
 
                         </li>
+                    {% endif %}
                     {% endfor %}
                     </ul>
                 {% endif %}
             </li>
+            {% endif %}
             {% endfor %}
             <li class="divider"></li>
 
