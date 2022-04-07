@@ -28,7 +28,7 @@ layout: default
 RubyMine Run/Debug 설정
 
 메뉴 : Run > Edit Configurations  
-![Edit Configurations](/images/program/ruby/jekyll/Edit_Configurations.PNG)
+![Edit Configurations](../../../images/program/ruby/jekyll/Edit_Configurations.PNG)
 
 
 

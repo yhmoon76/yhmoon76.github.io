@@ -6,6 +6,9 @@ category: info
 layout: default
 ---
 
+[ruby 한글 홈페이지][1]  
+[jetbrains RubyMine][2]
+
 ## [Ruby](https://rubyinstaller.org/)
 
 * [download](https://rubyinstaller.org/downloads/)
@@ -38,3 +41,9 @@ layout: default
     ridk exec pacman -S mingw-w64-x86_64-libxslt
     gem install nokogiri --platform ruby -- --use-system-libraries
     ```
+
+[RubyMine][3]
+
+[1]:https://www.ruby-lang.org/ko/
+[2]:https://www.jetbrains.com/help/ruby/installation-guide.html
+[3]:/program/ruby/rubymine.html
