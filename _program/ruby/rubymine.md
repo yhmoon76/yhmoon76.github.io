@@ -23,6 +23,7 @@ C:\Users\yhmoo>npm -v
 ```
 
 ### <span style="color:#6a9fb5">Yarn 설치</span>
+Yarn은 JavaScript용 패키지 관리자 NPM(Node Package Manager)과 유사 JavaScript 종속성을 관리하는 데 사용
 ```shell
 C:\Users\yhmoo>npm install --global yarn
 
@@ -60,3 +61,9 @@ bundle install
 번들 설치 대화 상자 에서 다음 인수를 추가  
 --without production    
 ![1](../../images/program/ruby/rubymine3.PNG)
+
+```mermaid
+graph  LR
+    A[Write code] --> B{Does it work?}
+    
+```
