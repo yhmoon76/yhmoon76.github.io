@@ -25,7 +25,7 @@
                         {% for post in posts %}
                         {% if post.isPublishing %}
                             {% if page.url == post.url %}
-                                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                                <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
                             {% else %}
                                 <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
                             {% endif %}
@@ -50,7 +50,7 @@
             {% if depth1.isPublishing %}
 
                 {% if page.url == depth1.link %}
-                    <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{depth1.link}}">
+                    <li class="chapter active" data-level="1.1" data-path="{{site.baseurl}}{{depth1.link}}">
                 {% else %}
                     <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{depth1.link}}">
                 {% endif %}
@@ -65,7 +65,7 @@
                         {% if page.url == depth2.link %}
                             <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{depth2.link}}">
                         {% else %}
-                            <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{depth2.link}}">
+                            <li class="chapter" data-level="1.2" data-path="{{site.baseurl}}{{depth2.link}}">
                         {% endif %}
                         <a href="{{site.baseurl}}{{depth2.link}}">
                             {{depth2.name}}
@@ -76,9 +76,9 @@
                                 {% if depth3.isPublishing %}
 
                                 {% if page.url == depth3.link %}
-                                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{depth3.link}}">
+                                <li class="chapter active" data-level="1.3" data-path="{{site.baseurl}}{{depth3.link}}">
                                     {% else %}
-                                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{depth3.link}}">
+                                <li class="chapter" data-level="1.3" data-path="{{site.baseurl}}{{depth3.link}}">
                                     {% endif %}
                                     <a href="{{site.baseurl}}{{depth3.link}}">
                                         {{depth3.name}}
@@ -88,13 +88,19 @@
                                     {% if post.category == depth3.name and post.isPublishing %}
 
                                         {% if page.url == post.url %}
-                                        <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                                        <li class="chapter active" data-level="1.4" data-path="{{site.baseurl}}{{post.url}}">
                                             {% else %}
-                                        <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                                        <li class="chapter" data-level="1.4" data-path="{{site.baseurl}}{{post.url}}">
                                             {% endif %}
                                             <a href="{{site.baseurl}}{{post.url}}">
                                                 {{post.title}}
                                             </a>
+
+                                            {% if site.toc.enabled %}
+                                                {% if page.url == post.url %}
+                                                    {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                                                {% endif %}
+                                            {% endif %}
                                         </li>
                                     {% endif %}
 
@@ -110,9 +116,9 @@
                                 {% if post.category == depth2.name and post.isPublishing %}
 
                                 {% if page.url == post.url %}
-                                <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
+                                <li class="chapter active" data-level="1.3" data-path="{{site.baseurl}}{{post.url}}">
                                     {% else %}
-                                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                                <li class="chapter" data-level="1.3" data-path="{{site.baseurl}}{{post.url}}">
                                     {% endif %}
                                     <a href="{{site.baseurl}}{{post.url}}">
                                         {{post.title}}
@@ -136,7 +142,7 @@
                                 {% if page.url == post.url %}
                                 <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
                                     {% else %}
-                                <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
+                                <li class="chapter" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
                                     {% endif %}
                                     <a href="{{site.baseurl}}{{post.url}}">
                                         {{post.title}}
@@ -144,7 +150,7 @@
 
                                     {% if site.toc.enabled %}
                                         {% if page.url == post.url %}
-                                            {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max %}
+                                            {% include toc.html html=content h_min=site.toc.h_min h_max=site.toc.h_max%}
                                         {% endif %}
                                     {% endif %}
                                 </li>

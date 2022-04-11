@@ -9,6 +9,8 @@ isPublishing: true
 
 [1]:https://nodejs.org/en/download/
 
+node.js 설치
+-------------
 [node.js (node-v16.14.2-x64.msi) 다운로드][1] 설치
 
 npm (Node Package Manager) 노드 패키지 관리자 Node.js에서 사용하는 모듈들을 패키지로 만들어 통합 관리/배포
@@ -22,7 +24,8 @@ C:\Users\yhmoo>npm -v
 8.5.0
 ```
 
-### <span style="color:#6a9fb5">Yarn 설치</span>
+Yarn 설치
+-------------
 Yarn은 JavaScript용 패키지 관리자 NPM(Node Package Manager)과 유사 JavaScript 종속성을 관리하는 데 사용
 ```shell
 C:\Users\yhmoo>npm install --global yarn
@@ -40,8 +43,8 @@ C:\Users\yhmoo>yarn --version
 1.22.18
 ```
 
-### <span style="color:#6a9fb5">JetBrains sample 설정</span>
-
+JetBrains sample 설정
+-------------
 git 으로 RubyMine 설정을 한다.
 git 으로 설정시 version control 설정이 File > New > Project.. 에 없어서 모든 프로젝트를 close 하면  
 아래와 같이 git 으로 프로젝트를 설정할수 있다.
@@ -52,7 +55,7 @@ Get form VCS 버튼을 클릭 하면 아래와 같이 git url 입력하는 화�
 Version control : Git 선택후  
 Url : https://github.com/JetBrains/sample_rails_app.git 입력하면 된다.
 
-![1](../../images/program/ruby/rubymine2.PNG)
+![2](../../images/program/ruby/rubymine2.PNG)
 
 Ctrl 키 두번 누르면 Run Anything 창이 열린다. 그런 아래와 같이 입력해서 실행한다.
 
@@ -60,10 +63,15 @@ bundle install
 
 번들 설치 대화 상자 에서 다음 인수를 추가  
 --without production    
-![1](../../images/program/ruby/rubymine3.PNG)
+<img src="../../images/program/ruby/rubymine3.PNG" height="150" width="500"/>
 
+yarn install (JavaScript dependencies﻿)
+Ctrl 키 두번 누르면 Run Anything 창이 열린다. 그런 아래와 같이 입력해서 실행한다.  
+<img src="../../images/program/ruby/rubymine4.PNG" height="150" width="500"/>
+
+    
 ```mermaid
 graph  LR
-    A[Write code] --> B{Does it work?}
+    A[Write code] --> B{Does it work?} --> C[Write coded]
     
 ```
