@@ -1,7 +1,7 @@
 - name: 경제
   code: economy
   link: /economy/index.html
-  isPublishing : false
+  isPublishing : true
   subMenu :
     - name : 경제
       link : /economy/economy/info.html
@@ -9,7 +9,7 @@
     - name : 주식
       link : /economy/stock/info.html
       isPublishing : false
-    - name : 경제
+    - name : 코인
       link : /economy/coin/info.html
       isPublishing : true
 - name: 프로그램
