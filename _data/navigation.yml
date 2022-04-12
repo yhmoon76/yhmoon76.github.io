@@ -9,6 +9,9 @@
     - name : 주식
       link : /economy/stock/info.html
       isPublishing : false
+    - name : 경제
+      link : /economy/coin/info.html
+      isPublishing : true
 - name: 프로그램
   code: program
   link: /program/index.html
