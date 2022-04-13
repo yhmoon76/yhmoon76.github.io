@@ -84,7 +84,9 @@
                                         {{depth3.name}}
                                     </a>
                                     <ul>
-                                {% for post in site['program'] %}
+
+                                {% for collection in site.collections %}
+                                {% for post in site[collection.label] %}
                                     {% if post.category == depth3.name and post.isPublishing %}
 
                                         {% if page.url == post.url %}
@@ -105,14 +107,15 @@
                                     {% endif %}
 
                                 {% endfor %}
+                                {% endfor %}
                                     </ul>
                                 </li>
 
                                 {% endif %}
                                 {% endfor %}
 
-
-                                {% for post in site['program'] %}
+                                {% for collection in site.collections %}
+                                {% for post in site[collection.label] %}
                                 {% if post.category == depth2.name and post.isPublishing %}
 
                                 {% if page.url == post.url %}
@@ -133,10 +136,12 @@
                                 </li>
                                 {% endif %}
                                 {% endfor %}
+                                {% endfor %}
                             </ul>
                             {% else %}
                             <ul>
-                                {% for post in site['program'] %}
+                                {% for collection in site.collections %}
+                                {% for post in site[collection.label] %}
                                 {% if post.category == depth2.name and post.isPublishing %}
 
                                 {% if page.url == post.url %}
@@ -155,6 +160,7 @@
                                     {% endif %}
                                 </li>
                                 {% endif %}
+                                {% endfor %}
                                 {% endfor %}
                             </ul>
                             {% endif %}

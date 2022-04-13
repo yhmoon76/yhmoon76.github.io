@@ -5,11 +5,11 @@
   subMenu :
     - name : 경제
       link : /economy/economy/info.html
-      isPublishing : false
+      isPublishing : true
     - name : 주식
       link : /economy/stock/info.html
-      isPublishing : false
-    - name : 코인
+      isPublishing : true
+    - name : coin
       link : /economy/coin/info.html
       isPublishing : true
 - name: 프로그램
