@@ -154,7 +154,7 @@ isPublishing: true
 
 코인종류
 ------------------
-**비트코인(BTC : Bitcoin)**
+[**비트코인(BTC : Bitcoin)**](./bitcoin.html)
 + homepage : [https://bitcoin.org](https://bitcoin.org/ko/)
 + [wikipedia](https://ko.wikipedia.org/wiki/%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8)
 + 암호화 방식 : SHA-256 
@@ -268,7 +268,7 @@ isPublishing: true
 **질리카(ZIL : Zilliqa)**
 + homepage : [https://www.zilliqa.com](https://www.zilliqa.com)
 
-[**휴먼스케이프(HUM : Humanscape)**](/economy/coin/humanscape.html)
+[**휴먼스케이프(HUM : Humanscape)**](./humanscape.html)
 + homepage : [https://humanscape.io](https://humanscape.io)
 
 **깃코인(GTC : GitCoin)**
