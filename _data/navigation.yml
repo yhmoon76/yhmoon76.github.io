@@ -17,6 +17,9 @@
   link: /program/index.html
   isPublishing : true
   subMenu :
+    - name : java
+      link : /program/java/info.html
+      isPublishing : true
     - name : javascript
       link : /program/javascript/info.html
       isPublishing : true
