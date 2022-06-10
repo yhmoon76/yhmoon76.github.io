@@ -18,4 +18,6 @@ isPublishing: true
 + 2021~2024년 블록 하나 당 보상금이 6.25개
 
 
+[비트코인 반감기란 무엇인가?](http://www.coindeskkorea.com/news/articleView.html?idxno=70609)
 
+[비트코인 반감기 카운트다운](https://academy.binance.com/ko/halving)
