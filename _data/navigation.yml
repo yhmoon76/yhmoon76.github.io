@@ -27,6 +27,9 @@
         - name : jquery
           link : /program/javascript/jquery/info.html
           isPublishing : true
+        - name : jqueryUI
+          link : /program/javascript/jqueryUI/info.html
+          isPublishing : true
     - name : docker
       link : /program/docker/info.html
       isPublishing : true
